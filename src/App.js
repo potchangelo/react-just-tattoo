@@ -1,16 +1,15 @@
 import './App.css';
+import AppHeader from './components/AppHeader';
+import TattooItem from './components/TattooItem';
 
 function App() {
     return (
         <div className="app">
-            <header className="app-header">
-                <img className="app-header-logo" src="/images/logo.png" />
-            </header>
+            <AppHeader />
             <div className="app-grid">
-                <div className="tattoo-item">
-                    <img src="/images/tattoo-01-small.jpg" />
-                    <h4>แขนเท่ห์ๆ</h4>
-                </div>
+                <TattooItem />
+                <TattooItem />
+                <TattooItem />
                 <div className="tattoo-item">
                     <img src="/images/tattoo-02-small.jpg" />
                     <h4>มือเท่ห์ๆ</h4>
