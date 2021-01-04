@@ -6,15 +6,23 @@ import TattooPost from './components/TattooPost';
 import tattoos from './data/tattoos';
 
 function App() {
-    const [selectedTattoo, setSelectedTattoo] = useState(tattoos[2]);
+    const [selectedTattoo, setSelectedTattoo] = useState(null);
+
+    function onTattooOpenClick(tattoo) {
+        setSelectedTattoo(tattoo);
+    }
+
+    function onTattooCloseClick() {
+        setSelectedTattoo(null);
+    }
 
     const tattooItems = tattoos.map((tattoo, index) => {
-        return <TattooItem key={index} tattoo={tattoo} />;
+        return <TattooItem key={index} tattoo={tattoo} onTattooClick={onTattooOpenClick} />;
     });
 
     let tattooPost = null;
     if (!!selectedTattoo) {
-        tattooPost = <TattooPost tattoo={selectedTattoo} />;
+        tattooPost = <TattooPost tattoo={selectedTattoo} onBgClick={onTattooCloseClick} />;
     }
 
     return (
