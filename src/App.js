@@ -1,26 +1,17 @@
 import './App.css';
 
 function App() {
-    const buttonText = 'สักหน่อยมั้ยหละ';
-    const okButton = (
-        <button>
-            {buttonText}
-        </button>
-    );
-    const textInput = (
-        <input type="text" />
-    );
-
     return (
         <div className="app">
-            <h2>เจ็บปวดที่งดงาม</h2>
-            <p>อิอิอิอิ</p>
-            <p>
-                {textInput}
-            </p>
-            <p>
-                {okButton}
-            </p>
+            <header className="app-header">
+                <h4>Just Tattoo</h4>
+            </header>
+            <div className="app-grid">
+                <div className="tattoo-item">123456 123456 123456 123456 123456 123456 123456 123456 123456 123456 123456 123456 </div>
+                <div className="tattoo-item">123456 123456 123456 123456 123456 123456 123456 123456 123456 123456 123456 123456 </div>
+                <div className="tattoo-item">123456 123456 123456 123456 123456 123456 123456 123456 123456 123456 123456 123456 </div>
+                <div className="tattoo-item">123456 123456 123456 123456 123456 123456 123456 123456 123456 123456 123456 123456 </div>
+            </div>
         </div>
     );
 }
