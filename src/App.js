@@ -1,12 +1,14 @@
 import { useState } from 'react';
 import './App.css';
 import AppHeader from './components/AppHeader';
+import AppSearch from './components/AppSearch';
 import TattooItem from './components/TattooItem';
 import TattooPost from './components/TattooPost';
 import tattoos from './data/tattoos';
 
 function App() {
     const [selectedTattoo, setSelectedTattoo] = useState(null);
+    const [searchText, setSearchText] = useState('');
 
     function onTattooOpenClick(tattoo) {
         setSelectedTattoo(tattoo);
@@ -16,7 +18,9 @@ function App() {
         setSelectedTattoo(null);
     }
 
-    const tattooItems = tattoos.map((tattoo, index) => {
+    const tattooItems = tattoos.filter((tattoo) => {
+        return tattoo.title.includes(searchText);
+    }).map((tattoo, index) => {
         return <TattooItem key={index} tattoo={tattoo} onTattooClick={onTattooOpenClick} />;
     });
 
@@ -28,9 +32,14 @@ function App() {
     return (
         <div className="app">
             <AppHeader />
-            <div className="app-grid">
-                {tattooItems}
-            </div>
+            <section className="app-section">
+                <div className="app-container">
+                    <AppSearch value={searchText} onValueChange={setSearchText} />
+                    <div className="app-grid">
+                        {tattooItems}
+                    </div>
+                </div>
+            </section>
             {tattooPost}
         </div>
     );
