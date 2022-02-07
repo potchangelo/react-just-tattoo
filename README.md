@@ -10,7 +10,7 @@ Note: ทำขึ้นมาเพื่อการศึกษาทาง�
 
 https://www.youtube.com/watch?v=ojT758BNvqg
 
-## Install and Run project by VSCode
+## Install and Run project on VSCode
 
 0. ติดตั้ง Node.js ลงเครื่องให้เรียบร้อยก่อน (ใช้ Version 14 หรือ 16 ก็ได้)
 
@@ -32,7 +32,7 @@ npm install
 npm start
 ```
 
-## Github branch for each lessons
+## Github branches for each lessons
 
 1. [Create React App](https://github.com/potchangelo/react-just-tattoo/tree/01)
 2. [JSX](https://github.com/potchangelo/react-just-tattoo/tree/02)
@@ -47,3 +47,8 @@ npm start
 ## Credits
 
 https://unsplash.com/photos/RBsrv4yV5KY
+https://unsplash.com/photos/Lw4tNcvEaE8
+https://unsplash.com/photos/aTiGszXqrJE
+https://unsplash.com/photos/ftoD84_RRdM
+https://unsplash.com/photos/Y6TOX6LnIGs
+https://unsplash.com/photos/m1lS3CwUOus
