@@ -2,7 +2,7 @@
 
 https://just-tattoo.netlify.app/
 
-ตัวอย่างโปรเจ็ค Django จากคลิป "สอน React เบื้องต้น จนใช้ได้จริง #01" ของ Zinglecode
+ตัวอย่างโปรเจ็ค React จากคลิป "สอน React เบื้องต้น จนใช้ได้จริง #01" ของ Zinglecode
 
 Note: ทำขึ้นมาเพื่อการศึกษาทางการเขียนโปรแกรมเท่านั้น เนื้อหาบนเว็บไม่ใช่สินค้าหรือบริการที่มีอยู่จริง
 
@@ -44,4 +44,6 @@ npm start
 8. [Events](https://github.com/potchangelo/react-just-tattoo/tree/08)
 9. [Form input](https://github.com/potchangelo/react-just-tattoo/tree/09)
 
+## Credits
 
+https://unsplash.com/photos/RBsrv4yV5KY
