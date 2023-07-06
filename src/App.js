@@ -18,11 +18,13 @@ function App() {
     setSelectedTattoo(null);
   }
 
-  const tattooItems = tattoos.filter((tattoo) => {
-    return tattoo.title.includes(searchText);
-  }).map((tattoo, index) => {
-    return <TattooItem key={index} tattoo={tattoo} onTattooClick={onTattooOpenClick} />;
-  });
+  const tattooItems = tattoos
+    .filter(tattoo => {
+      return tattoo.title.includes(searchText);
+    })
+    .map((tattoo, index) => {
+      return <TattooItem key={index} tattoo={tattoo} onTattooClick={onTattooOpenClick} />;
+    });
 
   let tattooPost = null;
   if (!!selectedTattoo) {
@@ -35,9 +37,7 @@ function App() {
       <section className="app-section">
         <div className="app-container">
           <AppSearch value={searchText} onValueChange={setSearchText} />
-          <div className="app-grid">
-            {tattooItems}
-          </div>
+          <div className="app-grid">{tattooItems}</div>
         </div>
       </section>
       {tattooPost}

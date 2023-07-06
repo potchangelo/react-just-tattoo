@@ -1,0 +1,6 @@
+{
+  "arrowParens": "avoid",
+  "jsxSingleQuote": false,
+  "printWidth": 120,
+  "singleQuote": true
+}
