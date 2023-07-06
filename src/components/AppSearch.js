@@ -9,7 +9,7 @@ function AppSearch(props) {
         type="text"
         value={value}
         placeholder="Search tattoos"
-        onChange={(event) => onValueChange(event.target.value)}
+        onChange={event => onValueChange(event.target.value)}
       />
     </div>
   );
