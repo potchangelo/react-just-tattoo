@@ -20,6 +20,9 @@
       "last 1 safari version"
     ]
   },
+  "volta": {
+    "node": "18.17.0"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
