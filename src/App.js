@@ -1,10 +1,12 @@
 import { useState } from 'react';
 import AppHeader from './components/AppHeader';
+import AppPurpose from './components/AppPurpose';
 import AppSearch from './components/AppSearch';
 import TattooItem from './components/TattooItem';
 import TattooPost from './components/TattooPost';
 import tattoos from './data/tattoos';
 import './App.css';
+
 
 function App() {
   const [selectedTattoo, setSelectedTattoo] = useState(null);
@@ -16,6 +18,11 @@ function App() {
 
   function onTattooCloseClick() {
     setSelectedTattoo(null);
+  }
+
+  let appPurpose = null;
+  if (process.env.REACT_APP_IS_SHOW_PURPOSE === 'true') {
+    appPurpose = <AppPurpose />
   }
 
   const tattooItems = tattoos
@@ -33,6 +40,7 @@ function App() {
 
   return (
     <div className="app">
+      {appPurpose}
       <AppHeader />
       <section className="app-section">
         <div className="app-container">
